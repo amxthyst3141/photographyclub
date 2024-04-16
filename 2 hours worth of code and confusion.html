@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photography Club Registration Form</title>
+
+    <link rel="icon" type="image/x-icon" href="images/phototo.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+
+        body {
+        font-family: Garamond, serif;
+        background-color: #fddca1;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ffc76e;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .btn-primary {
+            background-color: #ffc76e;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffb031;
+        }
+
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container" style="margin-top: 40px;">
+
+        <h1>Club Registration Form</h1>
+        <form action="http://sirjm.infinityfreeapp.com/aa1receiver.php" method="GET">
+
+        <div class="form-group">
+            <label for="studname">Student Name:</label>
+            <input type="text" class="form-control" id="studname" name="studname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="emailadd">Email Address:</label>
+            <input type="email" class="form-control" id="emailadd" name="emailadd" required>
+        </div>
+
+        <div class="form-group">
+            <label>Biological Sex:</label><br>
+
+            <input type="radio" id="male" name="biosex" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="biosex" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="gradelevel">Incoming Grade Level:</label>
+
+            <select class="form-control" id="gradelevel" name="gradelevel" required>
+                <option value="">Select Grade Level</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Reason/s for Joining:</label><br>
+                <input type="checkbox" id="reason1" name="reason[]" value="Self-expression"> <label for="reason1">Creative medium for self-expression</label><br>
+                <input type="checkbox" id="reason2" name="reason[]" value="Skills"> <label for="reason2">Development of skills in photography</label><br>
+                <input type="checkbox" id="reason3" name="reason[]" value="Social"> <label for="reason3">Social interaction with peers with the same interest</label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        </form>
+
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+
+        <h2>About Us</h2>
+
+        <h6 style="margin-top: 20px; line-height: 25px;">The Photography Club offers a supportive environment for skill development, creative expression, and community building, making it a rewarding experience for photography enthusiasts of all levels. (raw pic by me)</h6>    
+
+        <img src="images/photolol.jpg" alt="photolol" style="border-radius: 8px; height: 100%; width: 100%;" class="center">
+
+    </div>
+
+</body>
+
+</html>
